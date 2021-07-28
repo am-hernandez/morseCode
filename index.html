@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset=UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="img/morse.png"/>
+    <title>Translate Morse Code</title>
+  </head>
+  <body>
+    <header>
+      <h1>Morse Code Translator</h1>
+    </header>
+    <main>
+      <div id="tabs">
+        <span class= "tab pressed" id="tab_encode">encode</span>
+        <span class= "tab" id="tab_decode">decode</span>
+      </div>
+      <div class="container" id="toMorse">
+          <textarea id="message" placeholder="enter message here"></textarea>
+          <span id="encode_message" class="submit_button">generate Morse</span>
+          <textarea id="encoded" placeholder="morse will appear here"></textarea>
+      </div>
+      <div class="container hidden" id="fromMorse">
+          <textarea id="morse" placeholder="enter morse here"></textarea>
+          <span id="decode_message" class="submit_button">translate Morse</span>
+          <textarea id="decoded" placeholder="message will appear here"></textarea>
+      </div>
+    </main>
+    <footer>
+      developed by A.M.Hernandez 2021
+    </footer>
+    <script src="js/morseCode.js"></script>
+    <script src="js/nav.js"></script>
+  </body>
+</html>
